@@ -1,5 +1,5 @@
-import EventEmitter from 'events';
+import {EventEmitter} from 'events';
 
-const event = new EventEmitter();
+const myEvents = new EventEmitter();
 
-export default event;
+export default myEvents;

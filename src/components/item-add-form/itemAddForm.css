@@ -1,3 +1,15 @@
-.item-add-form {
+.bottom-panel {
     margin-top: 10px;
+}
+
+.bottom-panel .new-todo-label {
+    width: auto;
+    flex-grow: 1;
+    margin-right: 3px;
+}
+.bottom-panel .new-todo-label.invalid {
+    border-color: #dc3545;
+}
+.form-control.invalid:focus {
+    box-shadow: 0 0 0 0.2rem #dc35456b;
 }

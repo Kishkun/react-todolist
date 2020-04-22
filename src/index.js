@@ -1,36 +1,35 @@
 import React from "react";
 import ReactDOM from "react-dom";
 import App from "./components/app/App";
-import * as serviceWorker from "./serviceWorker";
-// import 'bootstrap/dist/css/bootstrap.min.css';
-let list = [
+
+let todoData = [
     {
         id: 1,
         label: "learn HTML",
-        important: false
+        important: false,
+        done: false,
     },
     {
         id: 2,
-        label:  "learn CSS",
-        important: false
+        label: "learn CSS",
+        important: false,
+        done: false,
     },
     {
         id: 3,
         label: "learn JavaScript",
-        important: true
+        important: false,
+        done: false,
     },
     {
         id: 4,
         label: "learn React",
-        important: true
+        important: false,
+        done: false,
     }
 ];
 
 ReactDOM.render(
-  <React.StrictMode>
-    <App list={list} />
-  </React.StrictMode>,
-  document.getElementById("root")
+    <App todos={todoData}/>,
+    document.getElementById("root")
 );
-
-serviceWorker.unregister();
