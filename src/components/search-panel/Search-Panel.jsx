@@ -1,5 +1,6 @@
 import React from "react";
 import "./searchPanel.css";
+import myEvents from "../../events";
 
 class SearchPanel extends React.Component {
 
@@ -7,6 +8,7 @@ class SearchPanel extends React.Component {
         super(props);
         this.state = {};
     }
+
 
     render() {
         return (
@@ -16,7 +18,9 @@ class SearchPanel extends React.Component {
                            id="search"
                            name="search"
                            className="form-control search-input"
-                           placeholder="type to search" />
+                           placeholder="type to search"
+                           onChange={(e) => myEvents.emit('onTernChange', e.target.value)}
+                    />
                 </label>
             </div>
         );

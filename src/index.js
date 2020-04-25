@@ -25,7 +25,7 @@ let todoData = [
         id: 4,
         label: "learn React",
         important: false,
-        done: false,
+        done: true,
     }
 ];
 
